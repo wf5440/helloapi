@@ -7,7 +7,7 @@ import (
 )
 
 func helloHandler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintln(w, "你好，王发！测试你的第一个后端接口。")
+	fmt.Fprintln(w, "你好，王发！更新你的第一个后端接口。")
 }
 
 func main() {
@@ -21,3 +21,4 @@ func main() {
 	fmt.Println("Server listening on port " + port)
 	http.ListenAndServe(":"+port, nil)
 }
+
